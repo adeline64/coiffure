@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TemoignageController!{% endblock %}
+
+{% block body %}
+    <!--Témoignage-->
+
+    <section class="section theme" id="temoignage">
+        <div class="title">
+            <h1>Nos clients témoignent</h1>
+        </div>
+
+        <div class="temoignage-center container">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="temoignage">
+                         <div class="img-cover">
+                             <img src="{{asset('img/women.jpeg')}}" alt="">
+                         </div>
+                         <h3>Aaliyah P.</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus natus eaque ad ex voluptates veniam saepe repellendus id optio obcaecati, neque quasi possimus maxime sapiente tenetur corrupti. Commodi, quisquam!</p>
+                        </div>
+                    </li>
+
+                    <li class="glide__slide">
+                        <div class="temoignage">
+                         <div class="img-cover">
+                             <img src="{{asset('img/woman.jpeg')}}" alt="">
+                         </div>
+                         <h3>Sara R.</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus natus eaque ad ex voluptates veniam saepe repellendus id optio obcaecati, neque quasi possimus maxime sapiente tenetur corrupti. Commodi, quisquam!</p>
+                        </div>
+                    </li>
+
+                    <li class="glide__slide">
+                        <div class="temoignage">
+                         <div class="img-cover">
+                             <img src="{{asset('img/men.jpeg')}}" alt="">
+                         </div>
+                         <h3>Jeremy B.</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus natus eaque ad ex voluptates veniam saepe repellendus id optio obcaecati, neque quasi possimus maxime sapiente tenetur corrupti. Commodi, quisquam!</p>
+                        </div>
+                    </li>
+
+                    <li class="glide__slide">
+                        <div class="temoignage">
+                         <div class="img-cover">
+                             <img src="{{asset('img/kids.jpeg')}}" alt="">
+                         </div>
+                         <h3>Parker K.</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus natus eaque ad ex voluptates veniam saepe repellendus id optio obcaecati, neque quasi possimus maxime sapiente tenetur corrupti. Commodi, quisquam!</p>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </section>
+{% endblock %}

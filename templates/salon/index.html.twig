@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SalonController!{% endblock %}
+
+{% block body %}
+<!--Main-->
+
+ <main>
+       <!--Le Salon-->
+
+       <section class="section lesalon" id="lesalon">
+           <div class="title">
+               <h1>Le Salon</h1>
+           </div>
+
+
+           <div class="lesalon-center container">
+               <div class="left" data-aos="fade-right" data-aos-duration="2000">
+                   <img src="{{asset('img/salon.jpeg')}}" alt="">
+               </div>
+
+               <div class="right" data-aos="fade-left" data-aos-duration="2000"> 
+                   <h1>Votre Salon De Coiffure <span id="type2"></span></h1>
+                   <div class="prestations" data-aos="fade-down" data-aos-duration="2000">
+                    <span><i class="fas fa-clock"></i></span>
+                    <h2>Horaires</h2>
+                    <p>Lundi | 10h-20h</p>
+                    <p>Mardi | 10h-20h</p>
+                    <p>Mercredi | 10h-20h</p>
+                    <p>Jeudi | 10h-20h</p>
+                    <p>Vendredi | 10h-20h</p>
+                    <p>Samedi | 10h-20h</p>
+                    <a href="#" class="btn">Prendre Rendez-vous</a>
+                   </div>
+               </div>
+           </div>
+       </section>
+{% endblock %}

@@ -1,0 +1,73 @@
+<header class="header" id="accueil">
+     <!--Navigation-->
+     <nav class="nav ">
+         <div class="navigation container">
+             <div class="logo">
+                 <h1>AfroStyle<span>.</span></h1>
+             </div>
+
+             <div class="menu">
+                 <div class="top-nav">
+                    <div class="logo">
+                        <h1>AfroStyle<span>.</span></h1>
+                    </div>
+       
+                    <div class="close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                 </div>
+
+                 <ul class="nav-list">
+                     <li class="nav-item">
+                         <a href="{{path('accueil')}}" class="nav-link">Accueil</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="{{path('salon')}}" class="nav-link">Le Salon</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="{{path('prestation')}}" class="nav-link">Prestations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{path('temoignage')}}" class="nav-link">Témoignage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{path('reservation')}}" class="nav-link">Réservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{path('contact')}}" class="nav-link">Contact</a>
+                    </li>
+                    {% if (app.user.email is defined) %}
+			<li class="nav-item">
+				<a class="nav-link" href="{{path('app_logout') }}">Déconnexion</a>
+			</li>
+			
+		{% else %}
+			<li class="nav-item">
+				<a class="nav-link" href="{{path('app_login') }}">Connexion</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{path('app_register') }}">Inscription</a>
+			</li>
+		{% endif %} 
+                 </ul>
+             </div>
+
+             <div class="hamburger">
+                <i class="fas fa-bars"></i>
+             </div>
+         </div>
+     </nav>
+    <img class="banner" src="{{asset('img/bg.jpeg')}}" alt="">
+<div class="hero">
+    <h3>Bonjour, &</h3>
+    <h1>BIENVENUE</h1>
+    <h4>Dans votre salon de coiffure <span id="type1"></span></h4>
+</div>
+
+<!--Icons-->
+<div class="icons">
+  <a href="https://fr-fr.facebook.com/"> <span><i class="fab fa-facebook-f"></i></span> </a> 
+  <a href="https://www.instagram.com/"> <span><i class="fab fa-instagram"></i></span> </a> 
+   <a href="https://twitter.com/twitterfrance?lang=fr"> <span><i class="fab fa-twitter"></i></span> </a>
+</div>
+ </header>
